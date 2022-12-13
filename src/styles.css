@@ -1,0 +1,114 @@
+/* SET ALL ELEMENTS TO 0 PADDING AND 0 MARGIN AS DEFAULT */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ROOT COLOR PROFILE */
+:root {
+  --blue: #519bf5;
+  --dark-blue: #1b66c2;
+  --light-pink: #ff92d7;
+  --dark-pink: #ff78a3;
+  --black: #000000;
+  --gray: #888888;
+  --white: #ffffff;
+  --hero-font: 6rem;
+  --header-font: 3rem;
+  --para-font: 1.4rem;
+  --button-font: 1.2rem;
+}
+
+/* SETS FONT FAMILY AND SIZING - 1 REM EQUALS 10px */
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+  overflow-x: hidden;
+}
+
+/* CUSTOM SCROLLBAR */
+
+html::-webkit-scrollbar {
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 100px;
+}
+
+/* TYPOGRAPHY */
+
+.hero-heading {
+  font-size: var(--hero-font);
+  margin-bottom: 1rem;
+  text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* BUTTONS */
+
+button {
+  cursor: pointer;
+  letter-spacing: 0.15rem;
+}
+
+.blue-button {
+  background-color: var(--dark-blue);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: var(--white);
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 7px;
+  padding: 1.2rem;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 200px;
+  transition: all 0.5s ease;
+}
+
+.blue-button:hover {
+  background-color: var(--blue);
+}
+
+/* HEADER */
+
+header {
+  background: linear-gradient(var(--dark-pink), var(--light-pink));
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-left,
+.header-right {
+  width: 45%;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-container {
+  text-align: left;
+}
+
+/* NAVIAGATION */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

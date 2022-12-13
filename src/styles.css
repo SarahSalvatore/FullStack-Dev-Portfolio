@@ -7,8 +7,9 @@
   margin: 0;
 }
 
-/* ROOT COLOR PROFILE */
+/* ROOT PROFILE */
 :root {
+  /* COLOR PROFILE */
   --blue: #519bf5;
   --dark-blue: #1b66c2;
   --light-pink: #ff92d7;
@@ -16,10 +17,13 @@
   --black: #000000;
   --gray: #888888;
   --white: #ffffff;
+
+  /* FONT PROFILE */
   --hero-font: 6rem;
   --header-font: 3rem;
   --para-font: 1.4rem;
-  --button-font: 1.2rem;
+  --large-button-font: 1.6rem;
+  --large-badge-font: 2.2rem;
 }
 
 /* SETS FONT FAMILY AND SIZING - 1 REM EQUALS 10px */
@@ -50,6 +54,15 @@ html::-webkit-scrollbar-thumb {
   text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/* BADGES */
+
+.skills-badge {
+  color: var(--white);
+  font-size: var(--large-badge-font);
+  font-weight: 300;
+  margin: 0 2rem 1rem;
+}
+
 /* BUTTONS */
 
 button {
@@ -63,7 +76,7 @@ button {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   color: var(--white);
-  font-size: 1.6rem;
+  font-size: var(--large-button-font);
   border: none;
   border-radius: 7px;
   padding: 1.2rem;
@@ -111,4 +124,16 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+/* SKILLS */
+
+.skills-container {
+  background-color: var(--dark-blue);
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

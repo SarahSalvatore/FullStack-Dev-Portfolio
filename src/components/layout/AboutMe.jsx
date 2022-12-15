@@ -18,9 +18,9 @@ const AboutMe = () => {
           I graduated from the Full Stack Development program at York University
           with a focus on the MERN stack. Before that, I graduated from George
           Brown College for Graphic Design. My background in design has enhanced
-          my ability to develop intuitive and user-friendly interfaces within
-          applications, communicate with UX/UI professionals, and understand the
-          importance of information architecture.
+          my ability to develop intuitive, user-friendly interfaces within
+          applications and understand the importance of information
+          architecture.
         </p>
         <p className="paragraph-text">
           In my free time, I enjoy learning new technologies, tools and

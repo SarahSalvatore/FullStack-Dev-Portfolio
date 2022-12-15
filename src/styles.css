@@ -51,10 +51,18 @@ html::-webkit-scrollbar-thumb {
 
 /* TYPOGRAPHY */
 
-.hero-heading {
+.hero-heading-h1,
+.hero-heading-h2 {
   font-size: var(--hero-font);
-  margin-bottom: 1rem;
   text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hero-heading-h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-heading-h2 {
+  margin-bottom: 3rem;
 }
 
 .section-heading-font {
@@ -88,24 +96,21 @@ html::-webkit-scrollbar-thumb {
   margin: 0 2rem 1.5rem;
 }
 
-/* BUTTONS */
-
-button {
-  cursor: pointer;
-  letter-spacing: 0.15rem;
-}
+/* BUTTONS AND LINKS*/
 
 .blue-button {
   background-color: var(--dark-blue);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  color: var(--white);
-  font-size: var(--large-button-font);
-  border: none;
   border-radius: 7px;
-  padding: 1.2rem;
+  color: var(--white);
+  cursor: pointer;
+  font-size: var(--large-button-font);
+  letter-spacing: 0.15rem;
+  padding: 1.2rem 5rem;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-decoration: none;
   width: 200px;
   transition: all 0.8s ease;
 }
@@ -150,8 +155,8 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 .header-left,
@@ -205,6 +210,7 @@ nav {
   letter-spacing: 0.18rem;
   margin-left: 10rem;
   text-transform: uppercase;
+  text-decoration: none;
   transition: all 0.9s ease;
 }
 

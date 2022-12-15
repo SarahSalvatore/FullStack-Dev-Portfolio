@@ -1,8 +1,9 @@
+import { HashLink as Link } from "react-router-hash-link";
 import SectionHeading from "./SectionHeading";
 
 const AboutMe = () => {
   return (
-    <section className="section-container" id="about-section">
+    <section className="section-container-row" id="about-section">
       <div className="about-left">
         <h1>Image goes here</h1>
       </div>
@@ -28,6 +29,9 @@ const AboutMe = () => {
           cuddling) with my two huskies, and spending time with friends and
           family.
         </p>
+        <Link to="/resume" className="pink-text-link">
+          View my resume
+        </Link>
       </div>
     </section>
   );

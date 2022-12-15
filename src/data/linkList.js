@@ -14,18 +14,7 @@ export const linkList = [
   {
     index: 3,
     linkName: "LinkedIn",
-    linkTo: "http://www.google.com",
+    linkTo: "https://www.linkedin.com/in/sarah-salvatore-full-stack-developer/",
     externalLink: true,
-  },
-  {
-    index: 4,
-    linkName: "Resume (pdf)",
-    linkTo: "http://www.google.com",
-    externalLink: true,
-    download: true,
   },
 ];
-
-// <a href="/samanthaming.png" download="logo">
-//  Download with custom filename -> logo.png
-// </a>

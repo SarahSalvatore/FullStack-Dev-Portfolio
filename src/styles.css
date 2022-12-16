@@ -21,8 +21,9 @@
   --white: #ffffff;
 
   /* FONT PROFILE */
-  --hero-font: 6rem;
+  --hero-font: 7rem;
   --header-font: 5rem;
+  --small-header-font: 2.5rem;
   --contact-font: 2rem;
   --footer-header-font: 3rem;
   --para-font: 1.7rem;
@@ -100,7 +101,7 @@ html::-webkit-scrollbar-thumb {
 
 .small-heading {
   color: var(--blue-black);
-  font-size: var(--para-font);
+  font-size: var(--small-header-font);
   margin-bottom: 3rem;
 }
 
@@ -206,8 +207,6 @@ header {
   background: linear-gradient(var(--dark-pink), var(--light-pink));
   color: var(--white);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
@@ -215,9 +214,22 @@ header {
   height: 100dvh;
 }
 
-.header-left,
-.header-right {
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.header-left {
   width: 45%;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 55%;
 }
 
 .header-left {
@@ -332,6 +344,12 @@ nav {
 
 .about-right {
   width: 60%;
+}
+
+/* PROJECTS */
+
+.project-right {
+  width: 55%;
 }
 
 /* CONTACT */

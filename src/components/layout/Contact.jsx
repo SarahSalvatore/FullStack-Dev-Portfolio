@@ -26,14 +26,25 @@ const Contact = () => {
             </p>
           </div>
           <div className="contact-right">
-            <h2>Let's Chat</h2>
+            <h2 className="small-heading">Let's Chat</h2>
             <form>
-              <label>Name</label>
-              <input />
-              <label>Email</label>
-              <input />
-              <label>Message</label>
-              <textarea />
+              <input
+                className="form-input"
+                placeholder="Name"
+                aria-label="name"
+              />
+
+              <input
+                className="form-input"
+                placeholder="Email"
+                aria-label="email"
+              />
+
+              <textarea
+                className="form-input"
+                placeholder="Message"
+                aria-label="message"
+              />
               <button className="form-button">Send</button>
             </form>
           </div>

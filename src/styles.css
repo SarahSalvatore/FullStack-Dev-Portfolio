@@ -16,6 +16,7 @@
   --dark-pink: #ff78a3;
   --blue-black: #254062;
   --black: #000000;
+  --light-gray: #f5f5f5;
   --gray: #121111be;
   --white: #ffffff;
 
@@ -25,6 +26,7 @@
   --contact-font: 2rem;
   --footer-header-font: 3rem;
   --para-font: 1.7rem;
+  --input-font: 1.5rem;
   --text-link-font: 1.8rem;
   --footer-font: 1.4rem;
   --large-button-font: 1.6rem;
@@ -94,6 +96,12 @@ html::-webkit-scrollbar-thumb {
   font-size: var(--footer-header-font);
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.small-heading {
+  color: var(--blue-black);
+  font-size: var(--para-font);
+  margin-bottom: 3rem;
 }
 
 /* BADGES */
@@ -357,12 +365,29 @@ nav {
   background-color: var(--blue);
 }
 
-input,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
+.form-input,
 textarea {
-  border: 0.5px solid var(--gray);
-  border-radius: 3px;
+  background-color: var(--light-gray);
+  border-radius: 4px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: var(--input-font);
+  font-weight: 300;
   padding: 1rem;
-  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  border: none;
+  color: var(--gray);
+}
+
+textarea {
+  height: 175px;
 }
 
 /* FOOTER */

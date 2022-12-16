@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -24,19 +24,13 @@ const Contact = () => {
   // Handles form input changes
   const handleFormInputChange = (event) => {
     setFormValues({ ...formValues, [event.target.name]: event.target.value });
-    console.log(event.target.name);
-    console.log(event.target.value);
   };
 
-  // Handles contact form submission
-  const submitContactForm = (event) => {
-    event.preventDefault();
-
-    // Validates form fields and sets errors
-    setErrors(formValidation(formValues));
-
-    // Submit form only if there are no errors found
-    if (!errors.name && !errors.email && !errors.message) {
+  const sendEmail = () => {
+    if (
+      Object.keys(errors).length === 0 &&
+      Object.values(formValues).length !== 0
+    ) {
       // Connects the email js account
       emailjs
         .sendForm(
@@ -48,7 +42,6 @@ const Contact = () => {
         .then(
           (result) => {
             toast("Your message has been successfully submitted.", toastProps);
-            event.target.reset();
           },
           (error) => {
             toast(
@@ -59,6 +52,44 @@ const Contact = () => {
         );
     }
   };
+
+  // Handles contact form submission
+  const submitContactForm = (event) => {
+    event.preventDefault();
+
+    // Validates form fields and sets errors
+    setErrors(formValidation(formValues));
+  };
+
+  useEffect(() => {
+    if (
+      Object.keys(errors).length === 0 &&
+      formValues.name &&
+      formValues.email &&
+      formValues.message
+    ) {
+      // Connects the email js account
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            toast("Your message has been successfully submitted.", toastProps);
+            setFormValues({ name: "", email: "", message: "" });
+          },
+          (error) => {
+            toast(
+              "Something went wrong. Form could not be submitted.",
+              toastProps
+            );
+          }
+        );
+    }
+  }, [errors, formValues.name, formValues.email, formValues.message]);
 
   return (
     <section className="contact-container-background" id="contact-section">

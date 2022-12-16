@@ -20,9 +20,9 @@ export const formValidation = (formValues) => {
 
   if (!formValues.message) {
     errors.message = "*required";
-  } else if (formValues.message < 5) {
+  } else if (formValues.message.length < 5) {
     errors.message = "*message must be at least 5 characters";
-  } else if (formValues.message > 1000) {
+  } else if (formValues.message.length > 1000) {
     errors.message = "*maximum message length exceeded";
   }
 

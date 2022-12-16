@@ -1,7 +1,7 @@
 export const toastProps = {
   className: "toast-notification",
   position: "top-center",
-  autoClose: 1400,
+  autoClose: 1500,
   hideProgressBar: true,
   closeOnClick: true,
   pauseOnHover: true,

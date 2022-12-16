@@ -16,6 +16,7 @@
   --dark-pink: #ff78a3;
   --blue-black: #254062;
   --black: #000000;
+  --red: #8e0303;
   --light-gray: #f5f5f5;
   --gray: #121111be;
   --white: #ffffff;
@@ -32,6 +33,7 @@
   --footer-font: 1.4rem;
   --large-button-font: 1.6rem;
   --large-badge-font: 2.2rem;
+  --error-font: 1.3rem;
 }
 
 /* SETS FONT FAMILY AND SIZING - 1 REM EQUALS 10px */
@@ -103,6 +105,12 @@ html::-webkit-scrollbar-thumb {
   color: var(--blue-black);
   font-size: var(--small-header-font);
   margin-bottom: 3rem;
+}
+
+.error-text {
+  color: var(--red);
+  font-size: var(--error-font);
+  font-weight: 400;
 }
 
 /* BADGES */

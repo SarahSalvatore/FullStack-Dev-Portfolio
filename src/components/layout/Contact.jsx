@@ -1,5 +1,5 @@
 import SectionHeading from "./SectionHeading";
-import chatBubbles from "../../assets/images/chatbubbles.png";
+import chatBubbles from "../../assets/images/chatbubbles.webp";
 
 const Contact = () => {
   return (

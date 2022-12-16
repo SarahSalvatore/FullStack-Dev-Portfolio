@@ -324,7 +324,14 @@ nav {
 .about-left,
 .about-right {
   height: 100%;
-  width: 50%;
+}
+
+.about-left {
+  width: 40%;
+}
+
+.about-right {
+  width: 60%;
 }
 
 /* CONTACT */

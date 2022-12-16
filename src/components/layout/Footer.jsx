@@ -12,6 +12,9 @@ const Footer = () => {
         <div>
           <LogoLink logoSrc={logo} className="footer-logo" />
           <h1 className="footer-heading-font">Sarah Salvatore</h1>
+          <p className="paragraph-text">
+            Built with React, JavaScript, Email.js
+          </p>
           <p className="paragraph-text">© 2022</p>
         </div>
         <div className="footer-links-container">

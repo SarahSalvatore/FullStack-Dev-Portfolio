@@ -26,33 +26,6 @@ const Contact = () => {
     setFormValues({ ...formValues, [event.target.name]: event.target.value });
   };
 
-  const sendEmail = () => {
-    if (
-      Object.keys(errors).length === 0 &&
-      Object.values(formValues).length !== 0
-    ) {
-      // Connects the email js account
-      emailjs
-        .sendForm(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          form.current,
-          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        )
-        .then(
-          (result) => {
-            toast("Your message has been successfully submitted.", toastProps);
-          },
-          (error) => {
-            toast(
-              "Something went wrong. Form could not be submitted.",
-              toastProps
-            );
-          }
-        );
-    }
-  };
-
   // Handles contact form submission
   const submitContactForm = (event) => {
     event.preventDefault();

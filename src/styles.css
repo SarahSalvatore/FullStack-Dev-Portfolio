@@ -61,7 +61,7 @@ html::-webkit-scrollbar-thumb {
 .hero-heading-h1,
 .hero-heading-h2 {
   font-size: var(--hero-font);
-  text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .hero-heading-h1 {

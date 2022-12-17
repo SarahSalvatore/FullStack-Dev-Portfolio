@@ -4,7 +4,7 @@ export const skillsList = [
   "React",
   "Node",
   "Express",
-  "MySql",
+  "MySQL",
   "MongoDB",
   "HTML",
   "CSS",

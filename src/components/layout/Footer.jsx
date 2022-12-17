@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="paragraph-text">
             Built with React, JavaScript, Email.js
           </p>
-          <p className="paragraph-text">© 2022</p>
+          <p className="paragraph-text">© 2022 Sarah Salvatore</p>
         </div>
         <div className="footer-links-container">
           <div className="footer-links-list">

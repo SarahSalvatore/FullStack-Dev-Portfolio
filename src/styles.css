@@ -41,7 +41,7 @@ html {
   font-family: "Lexend Deca", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 60px;
   overflow-x: hidden;
 }
 
@@ -368,17 +368,23 @@ nav {
 }
 
 .about-left {
-  width: 40%;
+  width: 45%;
+  margin-right: 3rem;
 }
 
 .about-right {
-  width: 60%;
+  width: 50%;
+}
+
+.sarah-photo {
+  margin-top: 3rem;
+  max-width: 100%;
 }
 
 /* PROJECTS */
 
 .project-right {
-  width: 55%;
+  width: 50%;
 }
 
 /* CONTACT */

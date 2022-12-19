@@ -1,11 +1,16 @@
 import { HashLink as Link } from "react-router-hash-link";
 import SectionHeading from "./SectionHeading";
+import sarahPhoto from "../../assets/images/sarah.png";
 
 const AboutMe = () => {
   return (
     <section className="section-container-row" id="about-section">
       <div className="about-left">
-        <h1>Image goes here</h1>
+        <img
+          className="sarah-photo"
+          src={sarahPhoto}
+          alt="woman with red hair and a blue shirt sitting in front of a gray laptop"
+        />
       </div>
       <div className="about-right">
         <SectionHeading title="Sarah Salvatore" />
@@ -25,9 +30,8 @@ const AboutMe = () => {
         </p>
         <p className="paragraph-text">
           In my free time, I enjoy learning new technologies, tools and
-          frameworks. When I'm not coding, you can usually find me hiking (or
-          cuddling) with my two huskies, and spending time with friends and
-          family.
+          frameworks. When I'm not coding, you can usually find me hiking with
+          my two huskies or watching obscure horror movies.
         </p>
         <Link to="/resume" className="pink-text-link">
           View my resume

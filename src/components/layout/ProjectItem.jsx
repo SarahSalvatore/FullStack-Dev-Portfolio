@@ -1,12 +1,16 @@
 import { HashLink as Link } from "react-router-hash-link";
+import wordleImg from "../../assets/images/wordle-screenshot.jpg";
 
-const ProjectItem = () => {
+const ProjectItem = ({ name, desc }) => {
   return (
     <div className="section-container">
+      <div className="project-left">
+        <img className="project-img" src={wordleImg} alt="Wordle" />
+      </div>
       <div className="project-right">
-        <h1 className="small-heading">Project Name</h1>
+        <h1 className="small-heading">{name}</h1>
         <div>Badges go here</div>
-        <p>Project description goes here.</p>
+        <p>{desc}</p>
         <Link to="/project" className="pink-text-link">
           Demo
         </Link>

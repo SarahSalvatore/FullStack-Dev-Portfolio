@@ -65,7 +65,7 @@ const Contact = () => {
   }, [errors, formValues.name, formValues.email, formValues.message]);
 
   return (
-    <section className="contact-container-background" id="contact-section">
+    <section id="contact-section">
       <ToastContainer transition={Flip} />
       <div className="section-container-column">
         <SectionHeading title="Contact" />

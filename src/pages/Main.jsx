@@ -9,9 +9,11 @@ const Main = () => {
     <div>
       <Header />
       <Skills />
-      <AboutMe />
-      <Projects />
-      <Contact />
+      <div className="background">
+        <AboutMe />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import SectionHeading from "./SectionHeading";
-import sarahPhoto from "../../assets/images/sarah.png";
+import Document from "./Document";
 import sIcon from "../../assets/images/S.png";
 
 const AboutMe = () => {
@@ -25,24 +25,31 @@ const AboutMe = () => {
             I'm a problem solver at heart and have always loved to build,
             improve and optimize things. I recently graduated from the Full
             Stack Development program at York University. Before that, I studied
-            Graphic Design. Studying design helped me understand the importance
-            of information architecture and helped make me a better developer.
+            Graphic Design. My background in design has helped me understand the
+            importance of information architecture and make me a better
+            developer.
           </p>
-
           <p className="paragraph-text">
             I love to develop intuitive, user-friendly interfaces and
             applications, and I continue to challenge myself to learn new
             technologies, tools and frameworks.
           </p>
           <p className="paragraph-text">
-            When I'm not coding, you can usually find me hanging out with my two
-            huskies, Buddy and Willow.
+            When I'm not coding, you can usually find me curled up with a book,
+            watching cartoons, or hiking with my two huskies, Buddy and Willow.
           </p>
           <Link to="/resume" className="black-text-link">
-            View my resume
+            Resume (HTML)
+          </Link>
+          <Link to="/resume" className="black-text-link">
+            Resume (PDF)
+          </Link>
+          <Link to="/resume" className="black-text-link">
+            My Grades (PDF)
           </Link>
         </div>
       </div>
+      <Document />
     </section>
   );
 };

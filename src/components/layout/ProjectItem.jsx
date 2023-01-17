@@ -1,22 +1,24 @@
 import { HashLink as Link } from "react-router-hash-link";
-import wordleImg from "../../assets/images/wordle-screenshot.jpg";
+import Badge from "../badges/Badge";
 
-const ProjectItem = ({ name, desc }) => {
+const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
   return (
     <div className="section-container">
       <div className="project-left">
-        <img className="project-img" src={wordleImg} alt="Wordle" />
+        <img
+          className="project-img"
+          src={require(`../../assets/images/${image}`)}
+          alt="Wordle"
+        />
       </div>
       <div className="project-right">
         <h1 className="small-heading">{name}</h1>
-        <div>Badges go here</div>
-        <p>{desc}</p>
-        <Link to="/project" className="pink-text-link">
-          Demo
-        </Link>
-        <Link to="/project" className="pink-text-link">
-          Code
-        </Link>
+        <div className="build-badge-container">
+          {badges.map((tag) => {
+            return <Badge className={`build-badge ${tag}`} title={tag} />;
+          })}
+        </div>
+        <p className="project-desc">{desc}</p>
       </div>
     </div>
   );

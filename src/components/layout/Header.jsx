@@ -10,7 +10,7 @@ const Header = () => {
             <hr className="hero-hr" />
             <h1 className="hero-heading-h1">Hi, I'm Sarah.</h1>
             <h2 className="hero-heading-h2">Full Stack Developer</h2>
-            <Link to="/#about-section" className="blue-button">
+            <Link to="/#about-section" className="black-button hero">
               Learn More
             </Link>
           </div>

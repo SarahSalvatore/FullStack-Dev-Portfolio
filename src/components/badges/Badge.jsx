@@ -1,5 +1,5 @@
-const Badge = (props) => {
-  return <span className={props.className}>{props.title}</span>;
+const Badge = ({ className, title }) => {
+  return <span className={className}>{title}</span>;
 };
 
 export default Badge;

@@ -17,19 +17,29 @@
   --orange: #fe994a;
   --light-gray: #f5f5f5;
   --gray: #121111be;
+  --grey: #adafad;
   --white: #ffffff;
+  --pink: #d53a9d;
+  --purple: #743ad5;
+  --gold: #9fab20;
+  --green: #2a7830;
+  --steel-blue: #4b6283;
+  --aqua: #13b9b6;
 
   /* FONT PROFILE */
   --hero-font: 8rem;
   --header-font: 5rem;
   --small-header-font: 2.5rem;
+  --x-small-header-font: 1.5rem;
   --contact-font: 2rem;
   --para-font: 1.7rem;
   --input-font: 1.5rem;
   --text-link-font: 1.8rem;
   --footer-font: 1.3rem;
   --large-button-font: 1.6rem;
+  --small-button-font: 1.4rem;
   --large-badge-font: 1.8rem;
+  --small-badge-font: 1.2rem;
   --error-font: 1.3rem;
 }
 
@@ -38,7 +48,7 @@ html {
   font-family: "Lexend Deca", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 60px;
+  scroll-padding-top: 30px;
   overflow-x: hidden;
 }
 
@@ -106,13 +116,26 @@ html::-webkit-scrollbar-thumb {
 .small-heading {
   color: var(--dark-blue);
   font-size: var(--small-header-font);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.tiny-heading {
+  color: var(--dark-blue);
+  font-size: var(--x-small-header-font);
+  margin-top: 1rem;
 }
 
 .error-text {
   color: var(--red);
   font-size: var(--error-font);
   font-weight: 400;
+}
+
+.project-desc {
+  color: var(--black);
+  font-size: var(--para-font);
+  font-weight: 300;
+  margin-top: 1rem;
 }
 
 /* BADGES */
@@ -124,28 +147,85 @@ html::-webkit-scrollbar-thumb {
   margin: 0 2rem 1.5rem;
 }
 
+.build-badge-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.build-badge {
+  border-radius: 5px;
+  color: var(--white);
+  font-size: var(--small-badge-font);
+  padding: 0.8rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.React {
+  background-color: var(--blue);
+}
+
+.JavaScript {
+  background-color: var(--gold);
+}
+
+.Sass {
+  background-color: var(--pink);
+}
+
+.HTML {
+  background-color: var(--dark-blue);
+}
+
+.API {
+  background-color: var(--red);
+}
+
+.Node {
+  background-color: var(--green);
+}
+
+.Express {
+  background-color: var(--grey);
+}
+
+.MySQL {
+  background-color: var(--steel-blue);
+}
+
+.Material-UI {
+  background-color: var(--aqua);
+}
+
 /* BUTTONS AND LINKS*/
 
-.blue-button {
+.black-button,
+.project-button {
   background-color: var(--black);
   box-shadow: rgba(0, 0, 0, 0.7) 0px 50px 80px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
   border-radius: 7px;
+  border: none;
   color: var(--white);
   cursor: pointer;
-  font-size: var(--large-button-font);
   font-weight: 300;
   letter-spacing: 0.15rem;
-  padding: 1.2rem 5rem;
   text-decoration: none;
-  width: 200px;
   transition: all 0.8s ease;
 }
 
-.blue-button:hover,
-.form-button:hover {
+.black-button:hover,
+.form-button:hover,
+.project-button:hover {
   background-color: var(--orange);
+}
+
+.hero {
+  font-size: var(--large-button-font);
+  padding: 1.2rem 5rem;
+  width: 200px;
 }
 
 .email-link {
@@ -392,11 +472,37 @@ nav {
   width: 90%;
 }
 
+/* PERSONAL DOCS */
+
+.doc-container {
+  aspect-ratio: 1;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.9) 0px 6px 20px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 130px;
+  transition: 0.8s;
+}
+
+.doc-container:hover {
+  background-color: var(--blue);
+}
+
+.doc-icon {
+  max-width: 70px;
+}
+
 /* PROJECTS */
 
 .project-right {
   width: 50%;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .project-left {
@@ -404,6 +510,7 @@ nav {
 }
 
 .project-img {
+  border-radius: 10px;
   max-width: 100%;
   cursor: pointer;
 }

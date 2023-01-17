@@ -10,8 +10,12 @@ const Projects = () => {
         return (
           <ProjectItem
             key={item.index}
+            image={item.projectImg}
             name={item.projectName}
+            badges={item.tags}
             desc={item.projectDesc}
+            demoHref={item.demoLink}
+            repoHref={item.repoLink}
           />
         );
       })}

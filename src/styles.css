@@ -170,7 +170,8 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--gold);
 }
 
-.Sass {
+.Sass,
+.CSS {
   background-color: var(--pink);
 }
 
@@ -178,7 +179,8 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--dark-blue);
 }
 
-.API {
+.API,
+.MongoDB {
   background-color: var(--red);
 }
 
@@ -194,7 +196,8 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--steel-blue);
 }
 
-.Material-UI {
+.Material-UI,
+.Mongoose {
   background-color: var(--aqua);
 }
 

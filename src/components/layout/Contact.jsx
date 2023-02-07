@@ -4,7 +4,7 @@ import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { toastProps } from "../../data/toastProps";
 import SectionHeading from "./SectionHeading";
-import chatBubbles from "../../assets/images/chatbubbles.webp";
+import contactPic from "../../assets/images/contact.png";
 import { formValidation } from "../../functions/formValidation";
 
 const Contact = () => {
@@ -72,21 +72,17 @@ const Contact = () => {
         <div className="section-container">
           <div className="contact-left">
             <img
-              src={chatBubbles}
-              alt="two white 3d chat bubbles"
-              className="chat-bubbles-img"
+              src={contactPic}
+              alt="phone with text messages coming out of the screen"
+              className="contact-img"
             />
             <p className="contact-paragraph-text">
-              If you have any questions or want to get in touch, please use my
-              contact form or email me at:
+              If you would like to get in touch, please use the contact form or
+              email me at:
             </p>
             <a href="mailto:sarah.h.salvatore@gmail.com" className="email-link">
               sarah.h.salvatore@gmail.com
             </a>
-
-            <p className="contact-paragraph-text">
-              I look forward to hearing from you!
-            </p>
           </div>
           <div className="contact-right">
             <h2 className="small-heading">Let's Chat</h2>

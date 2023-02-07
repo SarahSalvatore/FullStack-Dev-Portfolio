@@ -5,7 +5,7 @@ import { projectList } from "../../data/projectList";
 const Projects = () => {
   return (
     <section className="section-container-column" id="projects-section">
-      <SectionHeading title="Projects" />
+      <SectionHeading title="Portfolio" />
       {projectList.map((item) => {
         return (
           <ProjectItem

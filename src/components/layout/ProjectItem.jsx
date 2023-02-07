@@ -20,6 +20,24 @@ const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
           })}
         </div>
         <p className="project-desc">{desc}</p>
+        <div className="project-link-container">
+          <a
+            href={demoHref}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
+          >
+            Demo
+          </a>
+          <a
+            href={repoHref}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
+          >
+            Code
+          </a>
+        </div>
       </div>
     </div>
   );

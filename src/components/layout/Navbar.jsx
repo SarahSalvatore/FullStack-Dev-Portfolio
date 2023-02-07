@@ -1,4 +1,5 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import LogoLink from "./LogoLink";
 import MappedNav from "../operations/MappedNav";
 import { navList } from "../../data/navList";
@@ -13,6 +14,11 @@ const Navbar = () => {
       <div className="nav-right">
         <div className="nav-list">
           <MappedNav array={navList} className="nav-list-item" />
+          <FontAwesomeIcon
+            icon={faBars}
+            className="hamburger"
+            title="open navigation"
+          />
         </div>
       </div>
     </nav>

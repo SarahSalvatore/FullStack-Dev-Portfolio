@@ -1,9 +1,13 @@
-import React from "react";
+import { useInView } from "react-intersection-observer";
 
-const SectionHeading = (props) => {
+const SectionHeading = ({ title }) => {
+  const { ref, inView } = useInView();
+
   return (
-    <div>
-      <h1 className="section-heading-font">{props.title}</h1>
+    <div ref={ref}>
+      <h1 className={`section-heading-font ${inView ? "fade-down" : null}`}>
+        {title}
+      </h1>
     </div>
   );
 };

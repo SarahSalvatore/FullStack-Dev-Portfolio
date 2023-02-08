@@ -3,11 +3,16 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { toastProps } from "../../data/toastProps";
+import { useInView } from "react-intersection-observer";
 import SectionHeading from "./SectionHeading";
 import contactPic from "../../assets/images/contact.png";
 import { formValidation } from "../../functions/formValidation";
 
 const Contact = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   // Tracks form input field values
   const [formValues, setFormValues] = useState({
     name: "",
@@ -75,7 +80,10 @@ const Contact = () => {
       <ToastContainer transition={Flip} />
       <div className="section-container-column">
         <SectionHeading title="Contact" />
-        <div className="section-container">
+        <div
+          ref={ref}
+          className={`section-container ${inView ? "fade-fast" : null}`}
+        >
           <div className="contact-left">
             <img
               src={contactPic}

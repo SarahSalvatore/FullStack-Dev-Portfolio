@@ -5,13 +5,21 @@ import {
   faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { useInView } from "react-intersection-observer";
 import certificate from "../../assets/documents/ssalvatoreLetterCompletion2022.pdf";
 import grades from "../../assets/documents/ssalvatoreGradesTranscript2022.pdf";
 
 const AboutDocs = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <section className="skills-container">
-      <div className="docs-container">
+      <div
+        className={`docs-container ${inView ? "fade-fast" : null}`}
+        ref={ref}
+      >
         <div>
           <a
             href="path_to_file"

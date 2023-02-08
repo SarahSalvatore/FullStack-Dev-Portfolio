@@ -1,11 +1,19 @@
+import { useInView } from "react-intersection-observer";
 import SectionHeading from "./SectionHeading";
 import profilePic from "../../assets/images/profile.png";
 
 const AboutMe = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <section className="section-container-column" id="about-section">
       <SectionHeading title="Profile" />
-      <div className="about-section-row">
+      <div
+        ref={ref}
+        className={`about-section-row ${inView ? "fade-fast" : null}`}
+      >
         <div className="about-left">
           <img
             className="sarah-photo"

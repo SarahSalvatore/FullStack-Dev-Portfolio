@@ -367,6 +367,7 @@ nav {
   width: 100%;
   position: fixed;
   padding: 0.8rem 4rem;
+  z-index: 1;
 }
 
 .nav-list {
@@ -614,6 +615,11 @@ footer {
 .fade {
   animation: fadeIn;
   animation-duration: 6s;
+}
+
+.fade-fast {
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .fade-up {

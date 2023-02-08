@@ -1,8 +1,16 @@
+import { useInView } from "react-intersection-observer";
 import Badge from "../badges/Badge";
 
 const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <div className="section-container">
+    <div
+      ref={ref}
+      className={`section-container ${inView ? "fade-fast" : null}`}
+    >
       <div className="project-left">
         <a href={demoHref} target="_blank" rel="noreferrer">
           <img

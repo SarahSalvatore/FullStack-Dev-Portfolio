@@ -1,5 +1,13 @@
+import { useInView } from "react-intersection-observer";
+
 const Badge = ({ className, title }) => {
-  return <span className={className}>{title}</span>;
+  const { ref, inView } = useInView();
+
+  return (
+    <span ref={ref} className={`${className} ${inView ? "fade-fast" : null}`}>
+      {title}
+    </span>
+  );
 };
 
 export default Badge;

@@ -15,6 +15,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [submit, setSubmit] = useState(false);
+
   // Handles form input field errors
   const [errors, setErrors] = useState({});
 
@@ -32,10 +34,12 @@ const Contact = () => {
 
     // Validates form fields and sets errors
     setErrors(formValidation(formValues));
+    setSubmit(true);
   };
 
   useEffect(() => {
     if (
+      submit &&
       Object.keys(errors).length === 0 &&
       formValues.name &&
       formValues.email &&
@@ -53,16 +57,18 @@ const Contact = () => {
           (result) => {
             toast("Your message has been successfully submitted.", toastProps);
             setFormValues({ name: "", email: "", message: "" });
+            setSubmit(false);
           },
           (error) => {
             toast(
               "Something went wrong. Form could not be submitted.",
               toastProps
             );
+            setSubmit(false);
           }
         );
     }
-  }, [errors, formValues.name, formValues.email, formValues.message]);
+  }, [errors, formValues.name, formValues.email, formValues.message, submit]);
 
   return (
     <section id="contact-section">

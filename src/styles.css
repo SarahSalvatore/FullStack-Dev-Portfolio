@@ -267,6 +267,7 @@ html::-webkit-scrollbar-thumb {
 /* TOAST NOTIFICATIONS */
 
 .toast-notification {
+  background-color: var(--black);
   font-family: "Lexend Deca", sans-serif;
   font-size: var(--input-font);
   font-weight: 300;
@@ -274,13 +275,14 @@ html::-webkit-scrollbar-thumb {
 }
 
 .Toastify__toast-container--top-center {
+  background-color: var(--black);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .Toastify__toast {
-  background-color: var(--blue-black);
+  background-color: var(--black);
   color: var(--white);
   padding: 2rem 4rem;
 }
@@ -605,4 +607,23 @@ footer {
   text-decoration: none;
   color: var(--white);
   margin-bottom: 1rem;
+}
+
+/* ANIMATIONS */
+
+.fade {
+  animation: fadeIn;
+  animation-duration: 6s;
+}
+
+.fade-up {
+  animation: fadeInUp;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.fade-down {
+  animation: fadeInDown;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }

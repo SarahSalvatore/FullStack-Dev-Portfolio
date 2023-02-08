@@ -12,7 +12,7 @@ const AboutMe = () => {
       <SectionHeading title="Profile" />
       <div
         ref={ref}
-        className={`about-section-row ${inView ? "fade-fast" : null}`}
+        className={`about-section-row ${inView ? "fade-left" : null}`}
       >
         <div className="about-left">
           <img

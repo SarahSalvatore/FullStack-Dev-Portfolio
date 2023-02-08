@@ -82,7 +82,7 @@ const Contact = () => {
         <SectionHeading title="Contact" />
         <div
           ref={ref}
-          className={`section-container ${inView ? "fade-fast" : null}`}
+          className={`section-container ${inView ? "fade-up" : null}`}
         >
           <div className="contact-left">
             <img

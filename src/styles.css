@@ -615,11 +615,13 @@ footer {
 .fade {
   animation: fadeIn;
   animation-duration: 6s;
+  animation-fill-mode: both;
 }
 
 .fade-fast {
   animation: fadeIn;
   animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
 .fade-up {
@@ -630,6 +632,12 @@ footer {
 
 .fade-down {
   animation: fadeInDown;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.fade-left {
+  animation: fadeInLeft;
   animation-duration: 2s;
   animation-fill-mode: both;
 }

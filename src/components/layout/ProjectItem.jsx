@@ -7,10 +7,7 @@ const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
   });
 
   return (
-    <div
-      ref={ref}
-      className={`section-container ${inView ? "fade-fast" : null}`}
-    >
+    <div ref={ref} className={`section-container ${inView ? "fade-up" : null}`}>
       <div className="project-left">
         <a href={demoHref} target="_blank" rel="noreferrer">
           <img

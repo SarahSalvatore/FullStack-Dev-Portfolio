@@ -59,7 +59,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: var(--blue);
+  background-color: #a000c8;
   border-radius: 100px;
 }
 
@@ -153,7 +153,9 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 0.5rem;
 }
 
-.React {
+.React,
+.JWT,
+.Render {
   background-color: var(--blue);
 }
 
@@ -166,12 +168,14 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--pink);
 }
 
-.HTML {
+.HTML,
+.Hooks {
   background-color: var(--dark-blue);
 }
 
 .API,
-.MongoDB {
+.MongoDB,
+.Netlify {
   background-color: var(--red);
 }
 
@@ -179,7 +183,8 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--green);
 }
 
-.Express {
+.Express,
+.GitHub {
   background-color: var(--grey);
 }
 
@@ -200,8 +205,7 @@ html::-webkit-scrollbar-thumb {
 
 .black-button {
   background-color: var(--black);
-  border-radius: 7px;
-  border: none;
+  border-radius: 12px;
   color: var(--white);
   cursor: pointer;
   font-weight: 300;
@@ -210,6 +214,10 @@ html::-webkit-scrollbar-thumb {
   text-decoration: none;
   transition: all 0.8s ease;
   padding: 1.4rem 12rem;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 .black-button:hover,
@@ -315,20 +323,17 @@ header {
 }
 
 .header-left {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
 }
 
 .header-right {
   display: flex;
   justify-content: center;
-  width: 50%;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 55%;
 }
 
 .hero-text-container {
@@ -440,7 +445,7 @@ nav {
 .section-container {
   background-color: var(--white);
   border-radius: 12px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 20px -2px,
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 6px 20px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
   flex-direction: row;
@@ -521,10 +526,11 @@ nav {
   margin: 0.5rem 0;
   padding: 1rem;
   text-align: center;
+  transition: 0.6s;
 }
 
 .project-link:hover {
-  background-color: var(--orange);
+  color: var(--orange);
 }
 
 /* CONTACT */
@@ -640,4 +646,134 @@ footer {
   animation: fadeInLeft;
   animation-duration: 2s;
   animation-fill-mode: both;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1250px) {
+  .section-container-column {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 90%;
+  }
+
+  .about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .sarah-photo {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .docs-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .doc-link {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .header-left,
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-heading-h2 {
+    text-align: center;
+  }
+
+  .section-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .project-left,
+  .project-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .project-left {
+    margin-bottom: 2rem;
+  }
+
+  .project-img {
+    height: 200px;
+  }
+
+  .build-badge-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-desc {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .section-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header,
+  .background {
+    width: 100%;
+  }
+
+  nav,
+  .nav-list {
+    max-width: 100%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
 }

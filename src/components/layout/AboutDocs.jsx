@@ -20,7 +20,7 @@ const AboutDocs = () => {
         className={`docs-container ${inView ? "fade-fast" : null}`}
         ref={ref}
       >
-        <div>
+        <div className="doc-link">
           <a
             href="path_to_file"
             download="ssalvatoreTranscript2022.pdf"
@@ -36,7 +36,7 @@ const AboutDocs = () => {
             Resume
           </a>
         </div>
-        <div>
+        <div className="doc-link">
           <a
             href={grades}
             download="SSalvatoreTranscript.pdf"
@@ -52,7 +52,7 @@ const AboutDocs = () => {
             Grades
           </a>
         </div>
-        <div>
+        <div className="doc-link">
           <a
             href={certificate}
             download="ssalvatoreLetterofCompletion.pdf"
@@ -68,7 +68,7 @@ const AboutDocs = () => {
             Certificate
           </a>
         </div>
-        <div>
+        <div className="doc-link">
           <a
             href="https://www.linkedin.com/in/sarah-salvatore-full-stack-developer/"
             target="_blank"
@@ -83,7 +83,7 @@ const AboutDocs = () => {
             Linkedin
           </a>
         </div>
-        <div>
+        <div className="doc-link">
           <a
             href="https://github.com/SarahSalvatore"
             target="_blank"

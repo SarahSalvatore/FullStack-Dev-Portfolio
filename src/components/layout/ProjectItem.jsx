@@ -26,14 +26,16 @@ const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
         </div>
         <p className="project-desc">{desc}</p>
         <div className="project-link-container">
-          <a
-            href={demoHref}
-            target="_blank"
-            rel="noreferrer"
-            className="project-link"
-          >
-            Demo
-          </a>
+          {demoHref ? (
+            <a
+              href={demoHref}
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              Demo
+            </a>
+          ) : null}
           <a
             href={repoHref}
             target="_blank"

@@ -4,7 +4,7 @@ const SectionHeading = ({ title }) => {
   const { ref, inView } = useInView();
 
   return (
-    <div ref={ref}>
+    <div className="section-head" ref={ref}>
       <h1 className={`section-heading-font ${inView ? "fade-down" : null}`}>
         {title}
       </h1>

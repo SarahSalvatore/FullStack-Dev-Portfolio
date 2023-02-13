@@ -1,7 +1,16 @@
 export const projectList = [
   {
     index: 1,
-    tags: ["React", "JavaScript", "Sass", "HTML", " Public API", "Git"],
+    tags: [
+      "React",
+      "Hooks",
+      "JavaScript",
+      "Sass",
+      "HTML",
+      "Public API",
+      "Git",
+      "GitHub Pages",
+    ],
     projectName: "Wordle Game",
     projectDesc:
       "The popular word guessing game built with React, React Hooks (useState, useEffect, and useContext), a 2000+ word bank, and Free Dictionary API. The game features a rules modal, colour hints for correct/incorrect letters, and a game end modal displaying the correct word and it's definition. The site is fully responsive and deployed with GitHub Pages. ",
@@ -10,13 +19,14 @@ export const projectList = [
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
   {
-    index: 2,
+    index: 3,
     tags: [
       "React",
       "JavaScript",
       "Node",
       "Express",
       "MySQL",
+      "JWT",
       "Material-UI",
       "Sass",
       "HTML",
@@ -26,11 +36,28 @@ export const projectList = [
     projectDesc:
       "Built as my capstone project at York U, this full scale CRUD payroll app allows the client's freelance consultants to create and submit timesheets, update their profile and review paid/pending/denied payments. The client can approve/deny payments, track payments by pay period, calculate and generate bonuses, apply pay increases, track quarterly and bi-monthly metrics, and edit consultant profiles.",
     projectImg: "paymate-screenshot.jpg",
-    demoLink: "https://sarahsalvatore.github.io/Wordle/",
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
   {
-    index: 3,
+    index: 2,
+    tags: [
+      "JavaScript",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "HTML",
+      "Git",
+    ],
+    projectName: "RoboVA REST API",
+    projectDesc:
+      "The popular word guessing game built with React, React Hooks (useState, useEffect, and useContext), a 2000+ word bank, and Free Dictionary API. The game features a rules modal, colour hints for correct/incorrect letters, and a game end modal displaying the correct word and it's definition. The site is fully responsive and deployed with GitHub Pages. ",
+    projectImg: "robo-screenshot.jpg",
+    repoLink: "https://github.com/SarahSalvatore/Wordle",
+  },
+  {
+    index: 4,
     tags: [
       "JavaScript",
       "Node",
@@ -40,6 +67,8 @@ export const projectList = [
       "CSS",
       "HTML",
       "Git",
+      "Netlify",
+      "Render",
     ],
     projectName: "Condensed URL Shortener",
     projectDesc:

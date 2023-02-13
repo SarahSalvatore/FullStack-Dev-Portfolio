@@ -3,7 +3,7 @@ import Badge from "../badges/Badge";
 
 const Skills = () => {
   return (
-    <section className="skills-container">
+    <section className="skills-container" id="skills">
       {skillsList.map((item) => {
         return (
           <Badge

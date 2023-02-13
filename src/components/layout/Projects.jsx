@@ -14,7 +14,7 @@ const Projects = () => {
             name={item.projectName}
             badges={item.tags}
             desc={item.projectDesc}
-            demoHref={item.demoLink}
+            demoHref={item.demoLink ? item.demoLink : null}
             repoHref={item.repoLink}
           />
         );

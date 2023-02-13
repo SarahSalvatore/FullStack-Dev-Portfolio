@@ -6,7 +6,9 @@ const Header = () => {
   const { ref: textRef, inView: textInView } = useInView({
     triggerOnce: true,
   });
-  const { ref: imgRef, inView: imgInView } = useInView();
+  const { ref: imgRef, inView: imgInView } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <header>
@@ -19,7 +21,7 @@ const Header = () => {
             <h1 className="hero-heading-h1">Sarah</h1>
             <h1 className="hero-heading-h1">Salvatore</h1>
             <h2 className="hero-heading-h2">Full Stack Developer</h2>
-            <Link to="/#about-section" className="black-button">
+            <Link to="/#skills" className="black-button">
               Learn More
             </Link>
           </div>

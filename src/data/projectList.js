@@ -19,6 +19,24 @@ export const projectList = [
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
   {
+    index: 2,
+    tags: [
+      "JavaScript",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "HTML",
+      "Git",
+    ],
+    projectName: "RoboVA RESTful API and Database",
+    projectDesc:
+      "RESTful API that follows a model-view-controller architecture. Designed for a small business that offers Virtual Assistant Services. API performs CRUD operations and interacts with a MongoDB database.",
+    projectImg: "robo-screenshot.jpg",
+    repoLink: "https://github.com/SarahSalvatore/Wordle",
+  },
+  {
     index: 3,
     tags: [
       "React",
@@ -38,24 +56,7 @@ export const projectList = [
     projectImg: "paymate-screenshot.jpg",
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
-  {
-    index: 2,
-    tags: [
-      "JavaScript",
-      "Node",
-      "Express",
-      "MongoDB",
-      "Mongoose",
-      "JWT",
-      "HTML",
-      "Git",
-    ],
-    projectName: "RoboVA REST API",
-    projectDesc:
-      "The popular word guessing game built with React, React Hooks (useState, useEffect, and useContext), a 2000+ word bank, and Free Dictionary API. The game features a rules modal, colour hints for correct/incorrect letters, and a game end modal displaying the correct word and it's definition. The site is fully responsive and deployed with GitHub Pages. ",
-    projectImg: "robo-screenshot.jpg",
-    repoLink: "https://github.com/SarahSalvatore/Wordle",
-  },
+
   {
     index: 4,
     tags: [

@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 import LogoLink from "./LogoLink";
 import MappedNav from "../operations/MappedNav";
 import { navList } from "../../data/navList";
@@ -11,18 +12,27 @@ const Navbar = () => {
     triggerOnce: true,
   });
 
+  const [openHamburger, setOpenHamburger] = useState(false);
+
   return (
     <nav>
       <div className={`nav-left ${inView ? "fade" : null}`} ref={ref}>
         <LogoLink logoSrc={logo} className="logo" />
       </div>
+
       <div className={`nav-right ${inView ? "fade" : null}`} ref={ref}>
-        <div className="nav-list">
-          <MappedNav array={navList} className="nav-list-item" />
-          <FontAwesomeIcon
-            icon={faBars}
-            className="hamburger"
-            title="open navigation"
+        <FontAwesomeIcon
+          icon={faBars}
+          className="hamburger"
+          title="open navigation"
+          onClick={() => setOpenHamburger(!openHamburger)}
+        />
+
+        <div className={openHamburger ? "nav-list open" : "nav-list"}>
+          <MappedNav
+            array={navList}
+            className="nav-list-item"
+            onClick={() => setOpenHamburger(false)}
           />
         </div>
       </div>

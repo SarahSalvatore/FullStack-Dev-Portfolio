@@ -13,7 +13,7 @@ export const projectList = [
     ],
     projectName: "Wordle Game",
     projectDesc:
-      "The popular word guessing game built with React, React Hooks (useState, useEffect, and useContext), a 2000+ word bank, and Free Dictionary API. The game features a rules modal, colour hints for correct/incorrect letters, and a game end modal displaying the correct word and it's definition. The site is fully responsive and deployed with GitHub Pages. ",
+      "The popular word guessing game, Wordle, built with React, React Hooks (useState, useEffect, and useContext), a 2000+ word bank, and Free Dictionary API. The game features a rules modal, colour hints for correct/incorrect letters, and a game end modal displaying the correct word and it's definition. The site is fully responsive and deployed with GitHub Pages. ",
     projectImg: "wordle-screenshot.jpg",
     demoLink: "https://sarahsalvatore.github.io/Wordle/",
     repoLink: "https://github.com/SarahSalvatore/Wordle",
@@ -32,7 +32,7 @@ export const projectList = [
     ],
     projectName: "RoboVA RESTful API and Database",
     projectDesc:
-      "RESTful API that follows a model-view-controller architecture. Designed for a small business that offers Virtual Assistant Services. API performs CRUD operations and interacts with a MongoDB database.",
+      "RoboVA consists of a RESTful API that follows a model-view-controller architecture. Designed for a small business that offers Virtual Assistant Services. The API performs CRUD operations to manage employees, clients and tasks. Middleware has been implemented to log delete requests and errors. Data is stored within a MongoDB database.",
     projectImg: "robo-screenshot.jpg",
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
@@ -52,7 +52,7 @@ export const projectList = [
     ],
     projectName: "PayMate Payroll App",
     projectDesc:
-      "Built as my capstone project at York U, this full scale CRUD payroll app allows the client's freelance consultants to create and submit timesheets, update their profile and review paid/pending/denied payments. The client can approve/deny payments, track payments by pay period, calculate and generate bonuses, apply pay increases, track quarterly and bi-monthly metrics, and edit consultant profiles.",
+      "PayMate was built as my capstone project at York U and is a full scale CRUD payroll application that allows consultants to create and submit timesheets, update their profile and track paid/pending/denied payment requests. The client can approve/deny consultant invoices, track payments, review pay periods, calculate and generate bonuses, apply pay raises, track quarterly and bi-monthly metrics, and edit consultant profiles.",
     projectImg: "paymate-screenshot.jpg",
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
@@ -73,7 +73,7 @@ export const projectList = [
     ],
     projectName: "Condensed URL Shortener",
     projectDesc:
-      "Transforms long URLs into more concise, 7 digit slugs. The condensed links can be used anywhere and will redirect to the original url. The application consists of a vanilla JavaScript frontend, a Node/Express server and a MongoDB database. The frontend was deployed with Netlify, and the backend was deployed with Render.",
+      "Condensed transforms long URLs into more concise, 7 digit slugs. The generated links can be used anywhere and will redirect to the original url. The application consists of a vanilla JavaScript frontend, a Node/Express server and a MongoDB database. The frontend was deployed with Netlify, and the backend was deployed with Render.",
     projectImg: "condensed-screenshot.jpg",
     demoLink: "https://condensed.netlify.app/",
     repoLink: "https://github.com/SarahSalvatore/Condensed-server",

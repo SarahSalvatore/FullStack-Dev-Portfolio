@@ -32,8 +32,7 @@ const AboutMe = () => {
             improve and optimize things. I recently graduated from the Full
             Stack Development program at York University with a focus on the
             MERN stack. Before that, I studied Graphic Design at George Brown
-            College. My background in design has made me a better developer by
-            providing a deeper understanding of the importance of information
+            College which provided me with a deeper understanding of information
             architecture.
           </p>
           <p className="paragraph-text">

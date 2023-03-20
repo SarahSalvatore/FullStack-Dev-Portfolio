@@ -79,7 +79,7 @@ const AboutDocs = () => {
             <FontAwesomeIcon
               icon={faLinkedin}
               className="icon"
-              title="link to Linkedin"
+              title="link to LinkedIn"
             />
             Linkedin
           </a>

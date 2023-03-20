@@ -7,6 +7,7 @@ import {
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { useInView } from "react-intersection-observer";
 import certificate from "../../assets/documents/ssalvatoreLetterCompletion2022.pdf";
+import resume from "../../assets/documents/SSalvatoreResume2023.pdf";
 import grades from "../../assets/documents/ssalvatoreGradesTranscript2022.pdf";
 
 const AboutDocs = () => {
@@ -22,8 +23,8 @@ const AboutDocs = () => {
       >
         <div className="doc-link">
           <a
-            href="path_to_file"
-            download="ssalvatoreTranscript2022.pdf"
+            href={resume}
+            download="SSalvatoreResume2023.pdf"
             target="_blank"
             rel="noreferrer"
             className="skills-badge link"

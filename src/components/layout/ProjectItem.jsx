@@ -9,7 +9,11 @@ const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
   return (
     <div ref={ref} className={`section-container ${inView ? "fade-up" : null}`}>
       <div className="project-left">
-        <a href={demoHref} target="_blank" rel="noreferrer">
+        <a
+          href={demoHref ? demoHref : repoHref}
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             className="project-img"
             src={require(`../../assets/images/${image}`)}

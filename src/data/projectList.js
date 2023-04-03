@@ -52,9 +52,8 @@ export const projectList = [
     ],
     projectName: "PayMate Payroll App",
     projectDesc:
-      "PayMate was built as my capstone project at York U and is a full scale CRUD payroll application that allows consultants to create and submit timesheets, update their profile and track paid/pending/denied payment requests. The client can approve/deny consultant invoices, track payments, review pay periods, calculate and generate bonuses, apply pay raises, track quarterly and bi-monthly metrics, and edit consultant profiles.",
+      "PayMate is a full scale CRUD payroll application that allows the client's consultants to create and submit timesheets, update their profile and track paid/pending/denied payment requests. The client can approve/deny consultant invoices, track payments, review pay periods, calculate and generate bonuses, apply pay raises, track quarterly and bi-monthly metrics, and edit consultant profiles.",
     projectImg: "paymate-screenshot.jpg",
-    repoLink: "https://github.com/SarahSalvatore/PayMatePayrollApp-Client",
   },
 
   {

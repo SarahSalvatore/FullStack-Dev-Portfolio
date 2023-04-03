@@ -30,7 +30,7 @@ const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
         </div>
         <p className="project-desc">{desc}</p>
         <div className="project-link-container">
-          {demoHref ? (
+          {demoHref && (
             <a
               href={demoHref}
               target="_blank"
@@ -39,15 +39,17 @@ const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
             >
               Demo
             </a>
-          ) : null}
-          <a
-            href={repoHref}
-            target="_blank"
-            rel="noreferrer"
-            className="project-link"
-          >
-            Code
-          </a>
+          )}
+          {repoHref && (
+            <a
+              href={repoHref}
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              Code
+            </a>
+          )}
         </div>
       </div>
     </div>

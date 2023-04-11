@@ -5,6 +5,25 @@ export const projectList = [
       "React",
       "Hooks",
       "JavaScript",
+      "Public API",
+      "CSS",
+      "HTML",
+      "Git",
+      "Netlify",
+    ],
+    projectName: "Bud's Coffee Bar",
+    projectDesc:
+      "This single page application was designed and developed for Bud's Coffee Bar, a Toronto based coffee shop. The app was built using React and implements the Google Maps Embed API to display their store location via an interactive map. The EmailJS API was used to send contact form submissions to their email inbox. The site is fully responsive and deployed with Netlify.",
+    projectImg: "buds-screenshot.jpg",
+    demoLink: "https://buds-coffee.netlify.app/",
+    repoLink: "https://github.com/SarahSalvatore/buds-coffee-shop",
+  },
+  {
+    index: 2,
+    tags: [
+      "React",
+      "Hooks",
+      "JavaScript",
       "Sass",
       "HTML",
       "Public API",
@@ -19,7 +38,7 @@ export const projectList = [
     repoLink: "https://github.com/SarahSalvatore/Wordle",
   },
   {
-    index: 2,
+    index: 3,
     tags: [
       "JavaScript",
       "Node",
@@ -37,7 +56,7 @@ export const projectList = [
     repoLink: "https://github.com/SarahSalvatore/roboVA-server",
   },
   {
-    index: 3,
+    index: 4,
     tags: [
       "React",
       "JavaScript",
@@ -57,7 +76,7 @@ export const projectList = [
   },
 
   {
-    index: 4,
+    index: 5,
     tags: [
       "JavaScript",
       "Node",

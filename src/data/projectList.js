@@ -73,6 +73,7 @@ export const projectList = [
     projectDesc:
       "PayMate is a full scale CRUD payroll application designed to streamline the client's payroll process. It allows employees to create and submit timesheets, update their profile and track the status of payment requests. The client can approve/deny consultant invoices, review pay periods and payment status, calculate and generate bonuses, apply pay raises, track quarterly and bi-monthly metrics, and edit consultant profiles.",
     projectImg: "paymate-screenshot.jpg",
+    repoLink: "https://github.com/SarahSalvatore",
   },
 
   {

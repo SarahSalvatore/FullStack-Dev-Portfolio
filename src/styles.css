@@ -227,7 +227,7 @@ html::-webkit-scrollbar-thumb {
 
 .black-button:hover,
 .form-button:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .email-link {
@@ -241,7 +241,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .email-link:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .black-text-link {
@@ -256,7 +256,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .black-text-link:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .form-button {
@@ -389,7 +389,7 @@ nav {
 }
 
 .nav-list-item:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .logo {
@@ -430,7 +430,7 @@ nav {
 }
 
 .link:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 /* SECTION */
@@ -499,7 +499,12 @@ nav {
   max-width: 100%;
   cursor: pointer;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.project-img:hover {
+  opacity: 0.7;
+  transition: 1s ease;
 }
 
 .project-link-container {
@@ -523,7 +528,7 @@ nav {
 }
 
 .project-link:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 /* CONTACT */

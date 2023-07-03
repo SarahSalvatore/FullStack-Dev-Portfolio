@@ -163,7 +163,8 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--blue);
 }
 
-.JavaScript {
+.JavaScript,
+.Google {
   background-color: var(--gold);
 }
 
@@ -192,7 +193,8 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--grey);
 }
 
-.MySQL {
+.MySQL,
+.TypeScript {
   background-color: var(--steel-blue);
 }
 

@@ -4,7 +4,7 @@ export const projectList = [
     tags: [
       "React",
       "TypeScript",
-      "Stein API",
+      "Public API",
       "Google Sheets",
       "CSS",
       "HTML",

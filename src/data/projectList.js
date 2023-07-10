@@ -97,23 +97,23 @@ export const projectList = [
     demoLink: "https://condensed.netlify.app/",
     repoLink: "https://github.com/SarahSalvatore/Condensed-server",
   },
-  {
-    index: 6,
-    tags: [
-      "React",
-      "Hooks",
-      "JavaScript",
-      "Google Maps API",
-      "CSS",
-      "HTML",
-      "Git",
-      "Netlify",
-    ],
-    projectName: "Bud's Coffee Bar",
-    projectDesc:
-      "This single page application was designed and developed for Bud's Coffee Bar, a Toronto based coffee shop. The app was built using React and implements the Google Maps Embed API to display their store location via an interactive map. The EmailJS API was used to send contact form submissions to their email inbox. The site is fully responsive and deployed with Netlify.",
-    projectImg: "buds-screenshot.jpg",
-    demoLink: "https://buds-coffee.netlify.app/",
-    repoLink: "https://github.com/SarahSalvatore/buds-coffee-shop",
-  },
+  // {
+  //   index: 6,
+  //   tags: [
+  //     "React",
+  //     "Hooks",
+  //     "JavaScript",
+  //     "Google Maps API",
+  //     "CSS",
+  //     "HTML",
+  //     "Git",
+  //     "Netlify",
+  //   ],
+  //   projectName: "Bud's Coffee Bar",
+  //   projectDesc:
+  //     "This single page application was designed and developed for Bud's Coffee Bar, a Toronto based coffee shop. The app was built using React and implements the Google Maps Embed API to display their store location via an interactive map. The EmailJS API was used to send contact form submissions to their email inbox. The site is fully responsive and deployed with Netlify.",
+  //   projectImg: "buds-screenshot.jpg",
+  //   demoLink: "https://buds-coffee.netlify.app/",
+  //   repoLink: "https://github.com/SarahSalvatore/buds-coffee-shop",
+  // },
 ];

@@ -8,16 +8,14 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <LogoLink logoSrc={logo} className="footer-logo" />
-        <p className="paragraph-text">
-          ©{year} built with <span>&#128151;</span> and React
-        </p>
+        <p className="paragraph-text">©{year} Sarah Salvatore</p>
         <a
           href="https://www.freepik.com/free-vector/chat-bot-mobile-chatting-isometric-concept_6342161.htm#page=3&query=contact&position=7&from_view=search&track=sph"
           target="_blank"
           rel="noreferrer"
           className="footer-link"
         >
-          Contact image by Freepik
+          vector images courtesy of Freepik
         </a>
       </div>
     </footer>

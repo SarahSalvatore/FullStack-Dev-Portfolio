@@ -2,9 +2,9 @@ export const projectList = [
   {
     index: 1,
     tags: [
-      "React",
       "TypeScript",
-      "Public API",
+      "React",
+      "Stein API",
       "Google Sheets",
       "CSS",
       "HTML",
@@ -13,7 +13,7 @@ export const projectList = [
     ],
     projectName: "Mentor A Promise",
     projectDesc:
-      "Created for Mentor A Promise, a nyc based nonprofit that helps children experiencing homelessness reach their academic potential. The site utilizes Google Sheets as a database. Stein API performs the post request and an Apps Script sends an email to the site admin. Fully responsive and boasts a perfect Lighthouse score for performance, accessibility and best practices",
+      "Mentor A Promise is a NYC-based nonprofit that helps children experiencing homelessness reach their academic potential. The site utilizes Google Sheets as a database. Stein API performs the post request and an Apps Script sends an email to the site admin. Fully responsive and boasts a perfect Lighthouse score for performance, accessibility and best practices",
     projectImg: "mentor-screenshot.jpg",
     demoLink: "https://www.mentorapromise.org",
     repoLink: "https://github.com/SarahSalvatore/MentorAPromiseWeb",
@@ -26,7 +26,7 @@ export const projectList = [
       "JavaScript",
       "Sass",
       "HTML",
-      "Public API",
+      "Dictionary API",
       "Git",
       "GitHub Pages",
     ],
@@ -103,7 +103,7 @@ export const projectList = [
       "React",
       "Hooks",
       "JavaScript",
-      "Public API",
+      "Google Maps API",
       "CSS",
       "HTML",
       "Git",

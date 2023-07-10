@@ -1,11 +1,11 @@
 export const skillsList = [
+  "TypeScript",
   "JavaScript",
   "React",
   "Node",
   "Express",
   "MySQL",
   "MongoDB",
-  "Redux",
   "HTML",
   "CSS",
   "Sass",

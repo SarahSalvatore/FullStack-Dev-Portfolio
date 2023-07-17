@@ -1,6 +1,6 @@
 export const projectList = [
   {
-    index: 3,
+    index: 1,
     tags: [
       "JavaScript",
       "Node",
@@ -18,7 +18,7 @@ export const projectList = [
     repoLink: "https://github.com/SarahSalvatore/roboVA-server",
   },
   {
-    index: 1,
+    index: 2,
     tags: [
       "TypeScript",
       "React",
@@ -37,7 +37,7 @@ export const projectList = [
     repoLink: "https://github.com/SarahSalvatore",
   },
   {
-    index: 2,
+    index: 3,
     tags: [
       "React",
       "Hooks",

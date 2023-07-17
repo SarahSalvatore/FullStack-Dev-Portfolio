@@ -8,7 +8,7 @@ const Header = () => {
   });
 
   return (
-    <header>
+    <header style={{ visibility: textInView ? "visible" : "hidden" }}>
       <div className="header-content">
         <div className="header-left" ref={textRef}>
           <div

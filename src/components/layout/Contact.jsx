@@ -9,9 +9,7 @@ import contactPic from "../../assets/images/contact.png";
 import { formValidation } from "../../functions/formValidation";
 
 const Contact = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   // Tracks form input field values
   const [formValues, setFormValues] = useState({
@@ -76,7 +74,10 @@ const Contact = () => {
   }, [errors, formValues.name, formValues.email, formValues.message, submit]);
 
   return (
-    <section id="contact-section">
+    <section
+      id="contact-section"
+      style={{ visibility: inView ? "visible" : "hidden" }}
+    >
       <ToastContainer transition={Flip} />
       <div className="section-container-column">
         <SectionHeading title="Contact" />

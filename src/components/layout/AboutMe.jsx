@@ -3,12 +3,14 @@ import SectionHeading from "./SectionHeading";
 import profilePic from "../../assets/images/profile.png";
 
 const AboutMe = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   return (
-    <section className="section-container-column" id="about-section">
+    <section
+      className="section-container-column"
+      id="about-section"
+      style={{ visibility: inView ? "visible" : "hidden" }}
+    >
       <SectionHeading title="Profile" />
       <div
         ref={ref}

@@ -31,7 +31,7 @@ export const projectList = [
     ],
     projectName: "Mentor A Promise",
     projectDesc:
-      "Mentor A Promise is a NYC-based nonprofit that helps children experiencing homelessness reach their academic potential. The site utilizes Google Sheets as a database. Stein API performs the post request and an Apps Script sends an email to the site admin. Fully responsive and boasts a perfect Lighthouse score for performance, accessibility and best practices",
+      "Created for a NYC-based nonprofit that helps children experiencing homelessness reach their academic potential. The site utilizes Google Sheets as a database. The Stein API performs post requests to Google Sheets which then triggers a Google Apps Script to send an email to the site admin and perform routine form maintenance. Fully responsive and boasts a perfect Lighthouse score for performance, accessibility and best practices",
     projectImg: "mentor-screenshot.jpg",
     demoLink: "https://www.mentorapromise.org",
     repoLink: "https://github.com/SarahSalvatore",

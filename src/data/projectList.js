@@ -1,5 +1,23 @@
 export const projectList = [
   {
+    index: 3,
+    tags: [
+      "JavaScript",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "HTML",
+      "Git",
+    ],
+    projectName: "RoboVA RESTful API and Database",
+    projectDesc:
+      "RoboVA consists of a RESTful API that follows a model-view-controller architecture. Designed for a small business that offers Virtual Assistant Services. The API performs CRUD operations to manage employees, clients and tasks. Middleware has been implemented to log delete requests and errors. Data is stored within a MongoDB database.",
+    projectImg: "robo-screenshot.jpg",
+    repoLink: "https://github.com/SarahSalvatore/roboVA-server",
+  },
+  {
     index: 1,
     tags: [
       "TypeScript",
@@ -16,7 +34,7 @@ export const projectList = [
       "Mentor A Promise is a NYC-based nonprofit that helps children experiencing homelessness reach their academic potential. The site utilizes Google Sheets as a database. Stein API performs the post request and an Apps Script sends an email to the site admin. Fully responsive and boasts a perfect Lighthouse score for performance, accessibility and best practices",
     projectImg: "mentor-screenshot.jpg",
     demoLink: "https://www.mentorapromise.org",
-    repoLink: "https://github.com/SarahSalvatore/MentorAPromiseWeb",
+    repoLink: "https://github.com/SarahSalvatore",
   },
   {
     index: 2,
@@ -36,24 +54,6 @@ export const projectList = [
     projectImg: "wordle-screenshot.jpg",
     demoLink: "https://sarahsalvatore.github.io/Wordle/",
     repoLink: "https://github.com/SarahSalvatore/Wordle",
-  },
-  {
-    index: 3,
-    tags: [
-      "JavaScript",
-      "Node",
-      "Express",
-      "MongoDB",
-      "Mongoose",
-      "JWT",
-      "HTML",
-      "Git",
-    ],
-    projectName: "RoboVA RESTful API and Database",
-    projectDesc:
-      "RoboVA consists of a RESTful API that follows a model-view-controller architecture. Designed for a small business that offers Virtual Assistant Services. The API performs CRUD operations to manage employees, clients and tasks. Middleware has been implemented to log delete requests and errors. Data is stored within a MongoDB database.",
-    projectImg: "robo-screenshot.jpg",
-    repoLink: "https://github.com/SarahSalvatore/roboVA-server",
   },
   {
     index: 4,
@@ -97,23 +97,4 @@ export const projectList = [
     demoLink: "https://condensed.netlify.app/",
     repoLink: "https://github.com/SarahSalvatore/Condensed-server",
   },
-  // {
-  //   index: 6,
-  //   tags: [
-  //     "React",
-  //     "Hooks",
-  //     "JavaScript",
-  //     "Google Maps API",
-  //     "CSS",
-  //     "HTML",
-  //     "Git",
-  //     "Netlify",
-  //   ],
-  //   projectName: "Bud's Coffee Bar",
-  //   projectDesc:
-  //     "This single page application was designed and developed for Bud's Coffee Bar, a Toronto based coffee shop. The app was built using React and implements the Google Maps Embed API to display their store location via an interactive map. The EmailJS API was used to send contact form submissions to their email inbox. The site is fully responsive and deployed with Netlify.",
-  //   projectImg: "buds-screenshot.jpg",
-  //   demoLink: "https://buds-coffee.netlify.app/",
-  //   repoLink: "https://github.com/SarahSalvatore/buds-coffee-shop",
-  // },
 ];

@@ -9,7 +9,7 @@ import contactPic from "../../assets/images/contact.png";
 import { formValidation } from "../../functions/formValidation";
 
 const Contact = () => {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   // Tracks form input field values
   const [formValues, setFormValues] = useState({

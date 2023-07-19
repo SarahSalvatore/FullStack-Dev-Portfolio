@@ -820,7 +820,7 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem;
   }
 
   .contact-right {
@@ -921,6 +921,14 @@ footer {
   .hero-img {
     width: 350px;
   }
+
+  .contact-paragraph-text {
+    font-size: 1.3rem;
+  }
+
+  .contact-left {
+    padding: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -967,7 +975,8 @@ footer {
   }
 
   .email-link {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    text-align: center;
   }
 }
 

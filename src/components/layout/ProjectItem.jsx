@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import Badge from "../badges/Badge";
 
 const ProjectItem = ({ name, image, badges, desc, demoHref, repoHref }) => {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
     <div
